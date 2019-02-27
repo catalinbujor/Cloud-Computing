@@ -1,0 +1,30 @@
+.page-content{
+    margin-top:10%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.second-page-content{
+    display: flex;
+    justify-content: center;
+}
+
+#time{
+    margin:20px;
+    display:  flex;
+    justify-content: center;    
+}
+
+.weather-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.weather-info>div{
+    display: flex;
+    margin:10px;
+
+}

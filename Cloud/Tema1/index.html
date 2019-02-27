@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="client.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="page-content">
+        <input id="location" name="name" placeholder="Location">
+        <button class="btn btn-primary" onclick="getWeatherInfo()">GetWeatherInfo</button>
+    </div>
+    <div class="weather-info">
+        <div id="weather"></div>
+        <div id="temp"></div>
+        <div id="temp_max"></div>
+        <div id="temp_min"></div>
+        <div id="humidity"></div>
+    </div>
+
+    <div class="second-page-content">
+        <input id="second-location" name="name" placeholder="Location (from Europe)">
+        <button class="btn btn-primary" onclick="getTimeInfo()">GetTimeInfo</button>
+    </div>
+    <div id="time">
+    </div>
+    <button class="btn btn-primary" onclick="getMetrics()">GetMetrics</button>
+    <button class="btn btn-primary" onclick="getImage()">GetImage</button>
+    <p id="metrics"></p>
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+{
+    "weather": {
+        "api_url": "http://api.openweathermap.org/data/2.5/weather?q=",
+        "api_key": "44115b201b52e0e0455bd4d0487ba249",
+        "weather_url": "http://localhost:3000/getWeatherInfo?location="
+    },
+    "time": {
+        "api_url": "https://timezoneapi.io/api/timezone/?timezone=Europe/",
+        "token": "KneOdlHswqbL",
+        "time_url": "http://localhost:3002/getTimeInfo?location="
+    },
+    "image":{
+        "api_url":"https://api.teleport.org/api/urban_areas/slug:",   
+        "image_service_url":"http://localhost:3003/getImage"
+    }
+}

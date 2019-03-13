@@ -1,0 +1,284 @@
+{
+	"info": {
+		"_postman_id": "58b0717e-054a-4d3a-9d52-72fe57c6ec84",
+		"name": "Tema2Cloud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get",
+			"item": [
+				{
+					"name": "http://localhost:3001/getCars",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": ""
+						},
+						"description": "asas"
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/getCar?id=5c88eba5eb1aa2510066cdf8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3001/getCar?id=5c88eba5eb1aa2510066cdf8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"getCar"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5c88eba5eb1aa2510066cdf8"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post",
+			"item": [
+				{
+					"name": "http://localhost:3001/addCars",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\n\t[{\n\t\"marca\":\"BMW\",\n\t\"motorizare\":\"benzina\",\n\t\"an\":2019,\n\t\"km\":10000\n\t},\n\t{\n\t\"marca\":\"BMW\",\n\t\"motorizare\":\"benzina\",\n\t\"an\":2019,\n\t\"km\":10000\n\t}]\n\t\n"
+						},
+						"url": {
+							"raw": "http://localhost:3001/addCars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"addCars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/addCar",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"marca\":\"BMW\",\n\t\"motorizare\":\"benzina\",\n\t\"an\":2019,\n\t\"km\":10000\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3001/addCar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"addCar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delete",
+			"item": [
+				{
+					"name": "http://localhost:3001/deleteCar?id=5c857a4cebc9246a4c6ef646",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\":\"Logan\",\n\t\"motorizare\":\"benzina\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3001/deleteCar?id=5c857a4cebc9246a4c6ef646",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"deleteCar"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5c857a4cebc9246a4c6ef646"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/deleteCars",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"marca\":\"Logan\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3001/deleteCars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"deleteCars"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Put",
+			"item": [
+				{
+					"name": "http://localhost:3001/updateCar?id=5c857a4cebc9246a4c6ef646",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"marca\":\"Mercedes\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3001/updateCar?id=5c88edee8b1e55192ce28ea7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"updateCar"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "5c88edee8b1e55192ce28ea7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3001/updateCars",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\t\n\t\"conditie\":\n\t{\n\t\t\t\"marca\":\"BMW\"\n\t\n\t},\n\t\"marca\":\"Audi\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3001/updateCars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"updateCars"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
